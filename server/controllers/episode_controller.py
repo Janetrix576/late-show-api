@@ -38,4 +38,4 @@ def delete_episode(id):
     episode = Episode.query.get_or_404(id)
     db.session.delete(episode)
     db.session.commit()
-    return {'message': 'Episode deleted'} 
+    return {'message': 'Episode deleted'}
